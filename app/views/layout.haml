@@ -1,0 +1,14 @@
+!!!5
+%html
+  %head
+    %title= @title || 'Minimal Sinatra App Template'
+
+    %link(rel="stylesheet" href="sass/base.css")
+
+  %body
+    %header
+      %h1 Minimal Sinatra App Template
+    #content
+      = yield
+    %footer
+      = haml :footer
