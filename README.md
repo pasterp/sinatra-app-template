@@ -2,6 +2,6 @@
 
 
 ##How to use
-'''bash
+```bash
 bundle exec rackup
-'''
+```
