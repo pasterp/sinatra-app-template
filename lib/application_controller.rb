@@ -14,14 +14,4 @@ class ApplicationController < Sinatra::Base
     enable :sessions
     set :session_secret, "CHANGE_ME"
   end
-
-  get '/' do 
-    haml :index
-  end
-
-  get '/sass/*.css' do
-    content_type 'text/css', :charset => 'utf-8'
-    filename= params[:splat].first
-    sass filename.to_sym, :views => 'app/assets/sass'
-  end
 end
