@@ -16,7 +16,9 @@ namespace :sinatra do
         puts "[#{klass}]:"
         klass.routes.each { |route|
           if route[0] != "HEAD"
-            puts "\t#{route[0]} #{route[1][0][0]}"
+            route[1].each{ |r|
+              puts "\t#{route[0]} #{r[0]}"
+          }
           end
         }
       end
