@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+gem 'rake'
 
 gem 'haml' #haml
 gem 'sass' #sass
@@ -21,5 +22,5 @@ gem 'dm-sqlite-adapter'
     #For use with bundle do 'bundle config build.do_mysql -- --with-mysql-dir=C:/paht_to/mysql-connector-c'
 
 
-#gem 'shotgun'   #Automatic code reloading for rack
+gem 'shotgun'   #Automatic code reloading for rack
                  #But not working for windows =( But who use windows to dev
